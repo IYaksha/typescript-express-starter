@@ -1,7 +1,7 @@
 {
   "name": "typescript-express",
-  "version": "1.0.8",
-  "private": true,
+  "version": "1.1.0",
+  "private": false,
   "scripts": {
     "dev": "npm run build && concurrently --kill-others \"tsc -w -p src\" \"nodemon dist/index.js -e ts\"",
     "debug": "npm run build && concurrently --kill-others \"tsc -w -p src\" \"nodemon --inspect dist/index.js -e ts\"",
@@ -53,5 +53,6 @@
     "ts-node": "^6.0.3",
     "tslint": "^5.18.0",
     "typescript": "^2.4.1"
-  }
+  },
+  "license": "MIT"
 }

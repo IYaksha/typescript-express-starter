@@ -1,6 +1,11 @@
 Typescript and Express.js 
 =========================
 
+# Note
+
+This repository is actually uses rjmacarthy/express-typescript-starter as a base.
+There was an issue regarding routes not working in the parent project so, I fixed those issue and started extending the above repository.
+
 An Express.js project implemented using Typescript with strongly typed objects:
 
 # Installation
@@ -77,8 +82,6 @@ src/
 ```
 
 # Docker
-
-Build the image `sudo docker build -t rjmacarthy/express-typescript-starter .`
 
 Run the image `docker-compose up`
 

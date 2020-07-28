@@ -1,9 +1,11 @@
 import * as http from 'http'
 import { DB_CONNECTION_STRING, PORT, USE_DB } from './var/config'
 import { Socket } from './socket/index'
-import app from './server'
+import app from './server/index'
 
-const server: http.Server = new http.Server(app)
+const expressServer = app();
+
+const server: http.Server = http.createServer(expressServer)
 const socket = new Socket(server)
 
 server.listen(PORT)
